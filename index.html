@@ -16,14 +16,18 @@
         @apply bg-[#212121] text-white px-5 py-3 text-center;
       }  
 
+      .btn.outlined {
+        @apply bg-white border border-[#212121] text-[#212121];
+      }
+
       .btn.rounded {
         @apply rounded-full;
       }
 
       .home::before {
-        /* content: url("./assets/scratch.svg");
+        content: url("./assets/scratch.svg");
         position: absolute;
-        bottom: -18px; */
+        bottom: -18px;
       }
 
       .active {
@@ -152,7 +156,7 @@
     <span class="text-yellow-500 text-xl">Post List</span>
     <div class="flex justify-between items-center w-full">
       <h3 class="text-5xl font-semibold">Categories</h3>
-      <a href="" class="btn inline-block">See More</a>
+      <a href="" class="btn outlined inline-block">See More</a>
     </div>
 
     <div class="mt-8 flex flex-col space-y-5 lg:flex-row lg:space-x-5 lg:space-y-0">
@@ -187,7 +191,7 @@
       <h3 class="text-5xl font-semibold">
         Our Best Seller Product
       </h3>
-      <a href="" class="btn inline-block">See More</a>
+      <a href="" class="btn outlined inline-block">See More</a>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-28 gap-x-10 mt-10">
@@ -450,9 +454,24 @@
         <div>
           <p class="font-bold py-2">Contact</p>
           <ul class="flex flex-col gap-2 space-y-1 mt-3">
-            <li>Lokasimu di Jakarta Barat</li>
-            <li>furniture@gmail.com</li>
-            <li>0897 8908 8976</li>
+            <li class="flex space-x-5 items-center">
+              <img src="./assets/location.svg" alt="">
+              <p>
+                Lokasimu di Jakarta Barat
+              </p>
+            </li>
+            <li class="flex space-x-3 items-center">
+              <img src="./assets/message.svg" alt="">
+              <p>
+                furniture@gmail.com
+              </p>
+            </li>
+            <li class="flex space-x-3 items-center">
+              <img src="./assets/phone.svg" alt="">
+              <p>
+                00837 73649 7898
+              </p>
+            </li>
           </ul>
         </div>
       </div>
